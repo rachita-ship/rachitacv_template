@@ -1,0 +1,282 @@
+@import url("https://fonts.googleapsi.com/css?family=poppins:200,300,400,500,600,700,800,900& display=swap");
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family:'poppins',sans-serif;
+    font-family:'poppins',sans-serif;
+
+}
+
+.navbar ul{
+    list-style: none;
+    background-color: #03a9f4;
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+.navbar a{
+    color: #fff;
+    text-decoration: none;
+    padding:15px;
+    display: block;
+    text-align: center;
+}
+    
+.navbar a:hover{
+    background-color: bisque;
+}
+.navbar li{
+    float: left;
+}
+
+body{
+    background-color: lightblue;
+    display:flex;
+    justify-items:center;
+    align-items:center;
+    min-height:100vh;
+
+}
+.container{
+    position: relative;
+    width:100%;
+    max-width:1000px;
+    min-height:1000px;
+    background:#fff;
+    margin: 50px;
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgb(0,0,0,0.1);
+}
+.container .left_side
+{
+    position: relative;
+    background: #003147;
+    padding:40px;
+}
+.profiletext{
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding-bottom:20px;
+    border-bottom:1px solid rgb(255, 255,255,0.2);
+
+}
+.profiletext.imgBx
+{
+    position:relative;
+    width:200px;
+    height:200px;
+    border-radius:40%;
+    overflow:hidden;
+}
+.profiletext.imgBx img
+ { 
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+.profiletext h2
+{
+    color:#fff;
+    font-size:1.5em;
+    margin-top:20px;
+    text-transform:uppercase;
+    text-align:center;
+    font-weight:600;
+    line-height:1.4em;
+}
+.profiletext h2 span{
+    font-size:0.8em;
+    font-weight:300;
+}
+.ContactInfo {
+    padding-top:40px;
+}
+.title{
+    color:#fff;
+    text-transform:uppercase;
+    font-weight:600;
+    letter-spacing:1px;
+    margin-bottom:20px;
+
+}
+            
+    
+
+  .ContactInfo ul
+{
+    position:relative;
+}
+.ContactInfo ul li {
+    position:relative;
+    list-style:none;
+    margin:10px 0;
+    cursor:pointer;
+}
+.ContactInfo ul li .icon {
+    display:inline-block;
+    width:30px;
+    font-size:18px;
+    color:#03a9f4 ;
+
+}
+.ContactInfo ul li span {
+    color:#fff;
+    font-weight: 300;
+    
+}
+.Eduaction li{
+margin-bottom:15px;
+
+}
+.Education h5{
+    color:#03a9f4;
+
+    font-weight:500;
+
+}
+.Education h4:nth-child(2){
+    color:#fff;
+    font-weight:500;
+
+}
+.Education h4{
+    color:#fff;
+    font-weight:300;
+
+}
+
+.ContactInfo.language .percent {
+    position:relative;
+    width:100%;
+    height:6px;
+    background:#081921;
+    display:block;
+    margin-top:5px;
+
+}
+.ContactInfo.language .percent div {
+    position:absolute;
+    top:0;
+    left:0;
+    height:100%;
+    background:#03a9f4;
+
+}
+.profiletext h2 span {
+    font-size:0.8em;
+    font-weight:300;
+    
+}
+.container .right_side
+ {
+    position: relative;
+    background:#fff;
+    padding:40px;
+    
+    }
+    .skills_section{
+    
+        margin-top: 50px;
+        
+    }
+    .skills_section h2{
+        
+        margin-bottom: 20px;
+    }
+    .skills_section  li{
+        
+        margin-left: 50px;
+        margin-bottom: 10px;
+        
+    }
+    .interest_section{
+    
+        margin-top: 50px;
+    }
+    .interest_section h2{
+        
+        margin-bottom: 20px;
+    }
+    .interest_section  li{
+        
+        margin-left: 50px;
+        margin-bottom: 10px;
+    }
+    .about_skills .percent {
+        position:relative;
+        width:50%;
+        height:6px;
+        background:#081921;
+        display:block;
+        margin-top:5px;
+    
+    }
+    .about_skills .percent div {
+        position:absolute;
+        top:0;
+        left:0;
+        height:100%;
+        background:#03a9f4;
+    
+    }
+    .TO_FIND ul li{
+        display:grid;
+        grid-template-rows: repeat(3,0.8em);
+    }
+    
+    @media(max-width:1000px)
+    {
+        .container
+        {
+            margin: 10px;
+            grid-template-columns: repeat(1,1fr);
+        }
+    }
+    .interest_section{
+    
+        margin-top: 50px;
+    }
+    .interest_section h2{
+        
+        margin-bottom: 20px;
+    }
+    .interest_section  li{
+        
+        margin-left: 50px;
+        margin-bottom: 10px;
+    }
+   .contact_picture{
+    background-color: red;
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    background: url("./../images/contactme.jpg");
+    background-position: center;
+    background-size: cover;
+
+   }
+   input{
+    border: 1px solid #cccc;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+
+
+
+   }
+   input,text{
+    border: 1px solid #03a9f4;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    
+
+
+   }
